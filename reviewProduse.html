@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/index.css">
+    <meta charset="utf-8" />
+    <title>Reviews and ratings </title>
+</head>
+<body>
+    <div id="container">
+    <div id="header">
+        <h1> Reviews and ratings!</h1>
+        
+    </div>
+    <div id="center">
+        <table id="tableReviews"  align="center" >
+            <tr>
+                <th>Nume Produs</th>
+                <th>Comentariu Produs</th>
+                <th>Nota ( 1 - 5 ) </th>
+            </tr>
+            
+        </table>
+        <br>
+        <p id="aici"> </p>
+        
+    </div>
+    <div id="footer">
+            <h5 align="left">Copyright &COPY;
+             Mazilu Eduard | Stan Bianca | Circiumaru Alex
+            </h5>
+    </div>
+</div>
+
+    <script src="./scriptReview.js"> </script>
+    <script>
+    let tdValue = document.querySelectorAll('.NotaProdus');
+    let suma = 0;  
+ 
+    for(let i = 0;i<tdValue.length;i ++) {
+     console.log(tdValue[i].textContent);   
+    
+     suma += parseInt(tdValue[i].textContent, 10);
+                
+    }
+
+    console.log(suma);
+    </script>
+</body>
+</html>
